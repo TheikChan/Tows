@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var name: String = ""
     @State var email: String = ""
+    @State var dob: String = ""
     
     var body: some View {
         NavigationView {
@@ -14,6 +15,10 @@ struct ContentView: View {
                 HStack{
                     Text("Email address:")
                     TextField("",text: $email)
+                }
+                HStack{
+                    Text("Date of birth:")
+                    TextField("",text: $dob)
                 }
             }
         }
